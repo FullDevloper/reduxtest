@@ -6,17 +6,17 @@ import Product from "./Product";
 export default function ProductList({ products }) {
   const responsive = {
     desktop: {
-      breakpoint: { max: 3000, min: 1024 },
+      breakpoint: { max:3000, min: 1024 },
       items: 4,
       slidesToSlide: 3, // optional, default to 1.
     },
     tablet: {
-      breakpoint: { max: 1024, min: 464 },
+      breakpoint: { max:1024, min: 464 },
       items: 3,
       slidesToSlide: 2, // optional, default to 1.
-    },
+    }, 
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max:464, min: 0 },
       items: 2,
       slidesToSlide: 1, // optional, default to 1.
     },
@@ -30,7 +30,7 @@ export default function ProductList({ products }) {
       ssr={true} // means to render carousel on server-side.
       infinite={true}
       autoPlay={true}
-      autoPlaySpeed={1000}
+      autoPlaySpeed={5000}
       keyBoardControl={true}
       customTransition="all .5"
       transitionDuration={500}
